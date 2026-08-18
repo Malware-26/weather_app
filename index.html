@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <div class="weather-card">
+
+            <header class="header">
+                <h1>Weather App</h1>
+
+                <form class="search-form" id="enterCity">
+                    <input
+                        type="text"
+                        id="cityInput"
+                        placeholder="Enter a city..."
+                    >
+
+                    <button type="submit">Search</button>
+                </form>
+            </header>
+
+
+            <section class="weather-content">
+
+                <div class="location">
+                    <h2 id="city">Lagos</h2>
+                    <p id="country">Nigeria</p>
+
+                    <div class="coordinates">
+                        <p>
+                            Latitude:
+                            <span id="latitude">--</span>
+                        </p>
+
+                        <p>
+                            Longitude:
+                            <span id="longitude">--</span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="weather-main">
+
+                    <div class="weather-icon" id="weatherIcon">
+                        ☀️
+                    </div>
+
+                    <div>
+                        <div class="temperature">
+                            <span id="temperature">--</span>°C
+                        </div>
+
+                        <p class="condition" id="condition">
+                            --
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="weather-details">
+
+                    <div class="detail">
+                        <span class="detail-icon">🌡️</span>
+
+                        <div>
+                            <p>Feels Like</p>
+                            <strong id="feelsLike">--</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="detail">
+                        <span class="detail-icon">💧</span>
+
+                        <div>
+                            <p>Humidity</p>
+                            <strong id="humidity">--</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="detail">
+                        <span class="detail-icon">💨</span>
+
+                        <div>
+                            <p>Wind</p>
+                            <strong id="wind">--</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
